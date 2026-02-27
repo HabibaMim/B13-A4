@@ -55,17 +55,14 @@
 
         </div>
         <div class="flex gap-[10px] mb-[16px]">
-            <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn" class="py-[5px] px-[20px] bg-blue-500 text-white rounded-md border-gray-100 border-[1px]">All</button>
-            <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn" class="py-[5px] px-[20px] bg-white rounded-md border-gray-100 border-[1px]">Interview</button>
-            <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn" class="py-[5px] px-[20px] bg-white rounded-md border-gray-100 border-[1px]">Rejected</button>
+            <button onclick="switchTab('all')" id="tab-all" class="py-[5px] px-[20px] rounded-md border-gray-100 border-[1px] transition-all duration-200">All</button>
+            <button onclick="switchTab('interview')" id="tab-interview" class="py-[5px] px-[20px] rounded-md border-gray-100 border-[1px] transition-all duration-200">Interview</button>
+            <button onclick="switchTab('rejected')" id="tab-rejected" class="py-[5px] px-[20px] bg-white rounded-md border-gray-100 border-[1px] transition-all duration-200">Rejected</button>
         </div>
 
-        <section id="filtered-section" class="hidden">
 
-        </section>
-
-        <section id="jobcards" class="space-y-[16px] pb-[60px]">
-
+        <section id="job-cards" class="space-y-[16px] pb-[60px]">
+            <div id="all-section">
             <!-- card1 -->
             <div class=" card1 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
@@ -226,8 +223,16 @@
                     </div>
                 </div>
             </div>
- 
+        </div>    
+
+<!-- Empty state -->
+ <div class="  hidden border-gray-100 border-[1px] bg-white h-[350px] rounded-md flex flex-col justify-center items-center"><i class=" text-[100px] text-[#7DA8FF] fa-solid fa-file-lines"></i>
+    <h2 class="text-[24px] font-[600]">No jobs available</h2>
+    <p class="text-[#64748bFF]">Check back soon for new job opportunities</p>
+ </div>
         </section>
+        <section id="interview-section" class="hidden"></section>
+        <section id="rejected-section" class="hidden"></section>
     </main>
     <script src="./script.js"></script>
 </body>
