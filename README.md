@@ -24,4 +24,4 @@ Answer: Event Delegation in (DOM) is when instead of adding event listeners on e
 
 5. What is the difference between preventDefault() and stopPropagation() methods?
 
-Answer: preventDefault() is used to prevent default actions of an element in a browser. Example of such default action is following a url clicking on a link or submitting a form using submit button. But it does not prevent event from bubbling up or propagating through its ancestor elements. Whereas stopPropagation() method stops the event from bubbling up through the ancestor elements in the DOM tree. But it does not prevent the default actions which preventDefault() does.
+Answer: preventDefault() is used to prevent default actions of an element in a browser. Example of such default action is following a url clicking on a link or submitting a form using submit button. But it does not prevent the event from bubbling up or propagating through its ancestor elements. Whereas stopPropagation() method stops the event from bubbling up through the ancestor elements in the DOM tree. But it does not prevent the default actions which can be prevented by using preventDefault().
