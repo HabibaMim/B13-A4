@@ -8,3 +8,10 @@ Answer: getElementById, getElementsByClassName, querySelector and querySelectorA
 
 Answer: To create an element in a HTML document, we can use document.createElement(). Then we can use innerText to add text content to the element, or innerHTML can also be used to add HTML content to the element. Then we can append the element as a child to a parent element in the HTML document. We can use appendChild() for that.
 
+
+
+3. What is Event Bubbling? And how does it work?
+
+Answer: Event Bubbling is a mechanism in Document Object Model (DOM) in which when an element receives an event it is propagated through its ancestor elements to the root element. Event is added to the child or its parent element using addEventListener(). If event listeners are added to multiple elements on the DOM tree then innermost element is triggered first. Ancestor elements sequentially respond to events triggered by the child element.
+
+
