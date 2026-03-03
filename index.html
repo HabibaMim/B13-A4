@@ -30,7 +30,7 @@
 <body class="bg-[#F8FAFC]">
     <header class="w-[80%] mx-auto">
         <h2 class="text-[#002c5cFF] text-[32px] font-[700] pt-[60px] pb-[20px]">Job Application Tracker</h2>
-        <div class="grid grid-cols-3 gap-[16px] font-bold boder-b-gray-200 pb-[30px]">
+        <div class="grid sm:grid-cols-3 grid-cols-1 gap-[16px] font-bold border-b-gray-200 pb-[30px]">
         <div class="p-[20px] bg-white rounded-md border-gray-100 border-[1px]">
             <h3 class="text-[#002c5cFF] font-medium">Total</h3>
             <p id="stat-total" class=" text-[#002c5cFF] text-[25px]">0</p>
@@ -54,8 +54,8 @@
         <p><span id="totalcount1">0</span> jobs</p>
 
         </div>
-        <div class="flex gap-[10px] mb-[16px]">
-            <button onclick="switchTab('all')" id="tab-all" class="py-[5px] px-[20px] rounded-md border-gray-100 border-[1px] transition-all duration-200">All</button>
+        <div class="flex sm:gap-[10px] mb-[16px] w-[80%]">
+            <button onclick="switchTab('all')" id="tab-all" class="py-[5px] sm:px-[20px] px-[10px] rounded-md border-gray-100 border-[1px] transition-all duration-200">All</button>
             <button onclick="switchTab('interview')" id="tab-interview" class="py-[5px] px-[20px] rounded-md border-gray-100 border-[1px] transition-all duration-200">Interview</button>
             <button onclick="switchTab('rejected')" id="tab-rejected" class="py-[5px] px-[20px] bg-white rounded-md border-gray-100 border-[1px] transition-all duration-200">Rejected</button>
         </div>
@@ -228,7 +228,7 @@
 <!-- Empty state -->
  <div id="empty-state" class="  hidden border-gray-100 border-[1px] bg-white h-[350px] rounded-md flex flex-col justify-center items-center"><i class=" text-[100px] text-[#7DA8FF] fa-solid fa-file-lines"></i>
     <h2 class="text-[24px] font-[600]">No jobs available</h2>
-    <p class="text-[#64748bFF]">Check back soon for new job opportunities</p>
+    <p class="text-[#64748bFF] sm:text-[16px] text-[12px]">Check back soon for new job opportunities</p>
  </div>
 
         <section id="interview-section" class="hidden"></section>
