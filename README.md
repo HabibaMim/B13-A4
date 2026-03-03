@@ -21,3 +21,7 @@ Answer: Event Bubbling is a mechanism in Document Object Model (DOM) in which wh
 Answer: Event Delegation in (DOM) is when instead of adding event listeners on each child, its used on the parent element instead. So when event happens on any child element event listener on the parent element handles it. event.target can be used to determine which child triggered the event. In this way it is useful because we can avoid repeating adding event listener on every child. Code is cleaner this way.
 
 
+
+5. What is the difference between preventDefault() and stopPropagation() methods?
+
+Answer: preventDefault() is used to prevent default actions of an element in a browser. Example of such default action is following a url clicking on a link or submitting a form using submit button. But it does not prevent event from bubbling up or propagating through its ancestor elements. Whereas stopPropagation() method stops the event from bubbling up through the ancestor elements in the DOM tree. But it does not prevent the default actions which preventDefault() does.
