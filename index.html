@@ -33,17 +33,17 @@
         <div class="grid grid-cols-3 gap-[16px] font-bold boder-b-gray-200 pb-[30px]">
         <div class="p-[20px] bg-white rounded-md border-gray-100 border-[1px]">
             <h3 class="text-[#002c5cFF] font-medium">Total</h3>
-            <p id="totalcount" class=" text-[#002c5cFF] text-[25px]">0</p>
+            <p id="stat-total" class=" text-[#002c5cFF] text-[25px]">0</p>
         </div>
 
         <div class="p-[20px] bg-white rounded-md border-gray-100 border-[1px]">
             <h3 class="text-[#002c5cFF] font-medium">Interview</h3>
-            <p id="interviewcount" class="text-green-500 text-[25px]">0</p>
+            <p id="stat-interview" class="text-green-500 text-[25px]">0</p>
         </div>
 
         <div class="p-[20px] bg-white rounded-md border-gray-100 border-[1px]">
             <h3 class="text-[#002c5cFF] font-medium">Rejected</h3>
-            <p id="rejectedcount" class="text-red-500 text-[25px]">0</p>
+            <p id="stat-rejected" class="text-red-500 text-[25px]">0</p>
         </div>
          </div>
     </header>
@@ -61,16 +61,16 @@
         </div>
 
 
-        <section id="job-cards" class="space-y-[16px] pb-[60px]">
-            <div id="all-section">
+        <div id="job-cards" class="space-y-[16px] pb-[60px]">
+            <section id="all-section" class="space-y-[16px]">
             <!-- card1 -->
-            <div class=" card1 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">Mobile First Corp</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class=" deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">React Native Developer</p>
                         <p class="text-gray-500 py-[10px] jobType">Remote • Full-time • $130,000 - $175,000</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -85,13 +85,13 @@
 
             <!-- card2 -->
 
-            <div class=" card2 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">WebFlow Agency</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class=" deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">Web Designer & Developer</p>
                         <p class="text-gray-500 py-[10px] jobType">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -105,13 +105,13 @@
             </div>
             <!-- card3 -->
 
-            <div class=" card3 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">DataViz Solutions</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class="deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">Data Visualization Specialist</p>
                         <p class="text-gray-500 py-[10px] jobType">Boston, MA • Full-time • $125,000 - $165,000</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -125,13 +125,13 @@
             </div>
             <!-- card4 -->
 
-            <div class=" card4 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">CloudFirst Inc</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class="deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">Backend Developer</p>
                         <p class="text-gray-500 py-[10px] jobType">Seattle, WA • Full-time • $140,000 - $190,000</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -145,13 +145,13 @@
             </div>
             <!-- card5 -->
 
-            <div class=" card5 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">Innovation Labs</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class="deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">UI/UX Engineer</p>
                         <p class="text-gray-500 py-[10px] jobType">Austin, TX • Full-time • $110,000 - $150,000</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -165,13 +165,13 @@
             </div>
             <!-- card6 -->
 
-            <div class=" card6 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">MegaCorp Solutions</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class="deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">JavaScript Developer</p>
                         <p class="text-gray-500 py-[10px] jobType">New York, NY • Full-time • $130,000 - $170,00</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -185,13 +185,13 @@
             </div>
             <!-- card7 -->
 
-            <div class=" card7 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">StartupXYZ</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class="deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">Full Stack Engineer</p>
                         <p class="text-gray-500 py-[10px] jobType">Remote • Full-time • $120,000 - $160,000</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -205,13 +205,13 @@
             </div>
             <!-- card8 -->
 
-            <div class=" card8 gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
+            <div class=" card gap-[16px] bg-white p-[24px] border-gray-100 border-[1px] rounded-md">
                 <div>
                     <div>
                          <div class="flex justify-between">
                         <h2 class="text-[19px] font-[600] text-[#002c5cFF] jobName">TechCorp Industries</h2>
                        
-                  <button class=" p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can"></i></button></div>
+                  <button id="deletebtn" class="deletebtn p-[5px] w-[40px] h-[40px] border-gray-100 border-[1px] rounded-full"><i class="fa-solid fa-trash-can pointer-events-none"></i></button></div>
                         <p class="text-gray-500 text-[17px] designation">Senior Frontend Developer</p>
                         <p class="text-gray-500 py-[10px] jobType">San Francisco, CA • Full-time • $130,000 - $175,000</p>
                         <p class="statuses bg-blue-100 w-[120px] flex justify-center p-2 rounded-md">NOT APPLIED</p>
@@ -223,16 +223,17 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </section>    
 
 <!-- Empty state -->
- <div class="  hidden border-gray-100 border-[1px] bg-white h-[350px] rounded-md flex flex-col justify-center items-center"><i class=" text-[100px] text-[#7DA8FF] fa-solid fa-file-lines"></i>
+ <div id="empty-state" class="  hidden border-gray-100 border-[1px] bg-white h-[350px] rounded-md flex flex-col justify-center items-center"><i class=" text-[100px] text-[#7DA8FF] fa-solid fa-file-lines"></i>
     <h2 class="text-[24px] font-[600]">No jobs available</h2>
     <p class="text-[#64748bFF]">Check back soon for new job opportunities</p>
  </div>
-        </section>
+
         <section id="interview-section" class="hidden"></section>
         <section id="rejected-section" class="hidden"></section>
+        </div>
     </main>
     <script src="./script.js"></script>
 </body>
