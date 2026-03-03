@@ -15,3 +15,9 @@ Answer: To create an element in a HTML document, we can use document.createEleme
 Answer: Event Bubbling is a mechanism in Document Object Model (DOM) in which when an element receives an event it is propagated through its ancestor elements to the root element. Event is added to the child or its parent element using addEventListener(). If event listeners are added to multiple elements on the DOM tree then innermost element is triggered first. Ancestor elements sequentially respond to events triggered by the child element.
 
 
+
+4. What is Event Delegation in JavaScript? Why is it useful?
+
+Answer: Event Delegation in (DOM) is when instead of adding event listeners on each child, its used on the parent element instead. So when event happens on any child element event listener on the parent element handles it. event.target can be used to determine which child triggered the event. In this way it is useful because we can avoid repeating adding event listener on every child. Code is cleaner this way.
+
+
